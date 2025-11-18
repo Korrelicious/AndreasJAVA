@@ -1,7 +1,7 @@
 public class Question {
-    String question;
-    String answer;
-    String correctAnswer;
+    private String question;
+    private String answer;
+    private String correctAnswer;
 
     public Question(String question, String answer, String correctAnswer) {
         this.question = question;
@@ -16,5 +16,9 @@ public class Question {
     }
     public String getCorrectAnswer() {
         return correctAnswer;
+    }
+    @Override
+    public String toString() {
+        return question + answer + "The correct answer is " + correctAnswer;
     }
 }
