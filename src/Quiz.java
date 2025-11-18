@@ -7,8 +7,13 @@ public class Quiz {
     int points;
 
     List<Question> questions = new ArrayList<Question>();
-
+    
     public static void main(String[] args) {
 
     }
+
+    Question question1 = new Question("What is the capital of Sweden?", "n\1.Malmo, n\2.Stockholm, n\3.Karlskrona, n\4.Karlshamn", "\n2.Stockholm");
+    Question question2 = new Question("What is the capital of United Kingdom ?", "n\1.London, n\2.Liverpool, n\3.Cardiff, n\4.Bradford", "\n1.London");
+    Question question3 = new Question("What is the capital of Ukraine?", "n\1.Lviv, n\2.Odesa, n\3.Kyiv, n\4.Kharkiv", "\n3.Kyiv");
+
 }
