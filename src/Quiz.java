@@ -18,7 +18,18 @@ public class Quiz {
             System.out.println(q.getAnswer());
             System.out.println("Enter your answer: ");
 
+            String answerInput = scanner.nextLine();
+            if (answerInput.equalsIgnoreCase(q.getCorrectAnswer())) {
+                System.out.println("Correct!");
+                points++;
+            } else {
+                System.out.println("Wrong!");
+                System.out.println("Correct answer is:" + q.getCorrectAnswer());
+            }
+
         }
+
+
         System.out.println("Quiz finished. Your score: " + points);
     }
 }
