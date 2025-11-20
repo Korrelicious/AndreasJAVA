@@ -16,8 +16,8 @@ public class Quiz {
         questions.add(new Question("What is the capital of Ukraine?\n", "1.Lviv;\n2.Odesa;\n3.Kyiv;\n4.Kharkiv;\n", "Kyiv"));
 
         System.out.println("Enter your name: ");
-        String name = scanner.nextLine();
-        System.out.println("Welcome " + name);
+        String userName = scanner.nextLine();
+        System.out.println("Welcome " + userName);
 
         for (Question q : questions) {
             System.out.println(q.getQuestion());
