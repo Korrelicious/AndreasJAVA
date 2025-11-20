@@ -34,9 +34,6 @@ public class Quiz {
 
         }
 
-
         System.out.println("Quiz finished. Your score: " + points);
     }
-
-
 }
