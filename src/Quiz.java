@@ -24,8 +24,7 @@ public class Quiz {
             System.out.println(q.getAnswer());
             System.out.println("Enter your answer: ");
             String answer = scanner.nextLine();
-            String answerInput = scanner.nextLine();
-            if (answerInput.equalsIgnoreCase(q.getCorrectAnswer())) {
+            if (answer.equalsIgnoreCase(q.getCorrectAnswer())) {
                 System.out.println("Correct!");
                 points++;
             } else {
