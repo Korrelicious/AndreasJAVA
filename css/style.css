@@ -1,5 +1,4 @@
 
-/*1 – Topbar*/
 .topbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -43,7 +42,6 @@
   flex-shrink: 0;
 }
 
-/*2 – Huvudnav*/
 .main-nav {
   position: fixed;
   top: 36px; left: 0; right: 0;
@@ -146,7 +144,6 @@
   border: 1.5px solid #ddd;
 }
 
-/*3 – Länknav*/
 .link-nav {
   position: fixed;
   top: 100px; left: 0; right: 0;
@@ -219,7 +216,6 @@
   vertical-align: middle;
 }
 
-/* ── RESET & ROOT ── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -255,9 +251,6 @@ ul {
   list-style: none;
 }
 
-/* ══════════════════════
-   PAGE GRID
-══════════════════════ */
 .page {
   display: grid;
   grid-template-columns: var(--sidebar-w) 1fr;
@@ -266,9 +259,6 @@ ul {
   margin-top: 144px; /* topbar 36 + main-nav 64 + link-nav 44 */
 }
 
-/* ══════════════════════
-   SIDEBAR
-══════════════════════ */
 .sidebar {
   grid-row: 1 / 2;
   grid-column: 1 / 2;
@@ -283,7 +273,6 @@ ul {
   overflow-y: auto;
 }
 
-/* Logo */
 .sidebar__logo {
   padding: 0 28px 32px;
   border-bottom: 1px solid var(--border);
@@ -298,7 +287,6 @@ ul {
   font-style: normal;
 }
 
-/* Navigation */
 .sidebar__nav {
   flex: 1;
   padding: 28px 0;
@@ -340,7 +328,6 @@ ul {
   opacity: 0.5;
 }
 
-/* User profile at bottom */
 .sidebar__footer {
   display: flex;
   align-items: center;
@@ -376,9 +363,6 @@ ul {
   color: var(--muted);
 }
 
-/* ══════════════════════
-   MAIN CONTENT
-══════════════════════ */
 .main {
   padding: 8px 48px;
 }
@@ -396,9 +380,6 @@ ul {
   padding: 40px 0;
 }
 
-/* ══════════════════════
-   FOOTER
-══════════════════════ */
 .footer {
   grid-column: 1 / -1;
   background: var(--surface);
@@ -435,7 +416,6 @@ ul {
   line-height: 1.8;
 }
 
-/* Nav columns */
 .footer__nav {
   padding: 0 16px;
   text-align: center;
@@ -466,7 +446,6 @@ ul {
   text-align: center;
 }
 
-/* Bottom bar */
 .footer__bottom {
   grid-column: 1 / -1;
   display: flex;
@@ -524,7 +503,7 @@ ul {
 
 .hero__image img {
   width: 100%;
-  height: auto;  /* hela bilden visas */
+  height: auto; 
   display: block;
   border-radius: 8px;
 }
