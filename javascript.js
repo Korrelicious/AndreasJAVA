@@ -1,4 +1,3 @@
-// ── Storage ───────────────────────────────────────────────────────────────────
 const STORAGE_KEY = 'javanytt_articles';
 
 function loadArticles() {
@@ -13,7 +12,6 @@ function saveArticles(articles) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(articles));
 }
 
-// ── Toast ─────────────────────────────────────────────────────────────────────
 function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');
   const toast = document.createElement('div');
@@ -32,7 +30,6 @@ function showToast(message, type = 'success') {
   }, 3200);
 }
 
-// ── Render Articles ───────────────────────────────────────────────────────────
 function renderArticles() {
   const grid = document.getElementById('articles-grid');
   const articles = loadArticles();
@@ -87,7 +84,6 @@ function escapeHtml(str) {
     .replace(/"/g, '&quot;');
 }
 
-// ── Modal ─────────────────────────────────────────────────────────────────────
 function openModal() {
   document.getElementById('article-modal').classList.add('modal--open');
   document.getElementById('modal-title-input').focus();
@@ -124,11 +120,9 @@ function validateForm(title, body, category) {
   return valid;
 }
 
-// ── Init ──────────────────────────────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', () => {
   renderArticles();
 
-  // Alla knappar med klassen js-open-modal öppnar modalen
   document.querySelectorAll('.js-open-modal').forEach(btn => {
     btn.addEventListener('click', openModal);
   });
