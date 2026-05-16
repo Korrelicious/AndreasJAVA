@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout – Navbar, Sidebar & Footer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,600;1,300&family=DM+Mono:wght@300;400&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/articles.css" />
+</head>
+<body>
+
+  <!-- Toast Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="topbar-messages">
+      <span class="topbar-msg">JUST NU! - STOR BRAND I FLERFAMILJSHUS</span>
+      <div class="topbar-divider"></div>
+      <span class="topbar-msg">AI - Undergången | <a>Visa alla teorier</a></span>
+    </div>
+  </div>
+
+  <!-- Main Nav -->
+  <div class="main-nav">
+    <div class="logo">JAVANYTT</div>
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Sök efter nyheter, artiklar och mer..." />
+    </div>
+    <div class="nav-icons">
+      <button class="nav-icon-btn">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </button>
+      <button class="nav-icon-btn">
+        <svg viewBox="0 0 24 24"><path d="M12 21C12 21 3 14.5 3 8.5A4.5 4.5 0 0 1 12 6a4.5 4.5 0 0 1 9 2.5C21 14.5 12 21 12 21z"/></svg>
+      </button>
+      <button class="nav-icon-btn">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.8">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <line x1="7" y1="8" x2="17" y2="8"/>
+          <line x1="7" y1="12" x2="17" y2="12"/>
+          <line x1="7" y1="16" x2="13" y2="16"/>
+        </svg>
+        <span>Välj Bilaga</span>
+      </button>
+      <div class="flag">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" fill="#006AA7"/>
+          <rect y="9" width="24" height="6" fill="#FECC02"/>
+          <rect x="6" width="6" height="24" fill="#FECC02"/>
+          <rect y="10" width="24" height="4" fill="#FECC02"/>
+          <rect x="7" width="4" height="24" fill="#FECC02"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Grid -->
+  <div class="page">
+
+    <aside class="sidebar">
+      <div class="sidebar__logo">
+        <span>AA Produktion</span>
+      </div>
+      <nav class="sidebar__nav">
+        <p class="sidebar__label">Nyheter</p>
+        <ul>
+          <li class="sidebar__item sidebar__item--active">
+            <a href="#"><span class="icon">▸</span> Startsida</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#"><span class="icon">▸</span> Senaste nytt</a>
+          </li>
+          <li class="sidebar__item">
+            <a href="#"><span class="icon">▸</span> Breaking News</a>
+          </li>
+        </ul>
+        <p class="sidebar__label">Kategorier</p>
+        <ul>
+          <li class="sidebar__item"><a href="#"><span class="icon">▸</span> Inrikes</a></li>
+          <li class="sidebar__item"><a href="#"><span class="icon">▸</span> Utrikes</a></li>
+          <li class="sidebar__item"><a href="#"><span class="icon">▸</span> Sport</a></li>
+          <li class="sidebar__item"><a href="#"><span class="icon">▸</span> Ekonomi</a></li>
+          <li class="sidebar__item"><a href="#"><span class="icon">▸</span> Kultur & Nöje</a></li>
+          <li class="sidebar__item"><a href="#"><span class="icon">▸</span> Tech</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__footer">
+        <div class="sidebar__avatar">AA</div>
+        <div class="sidebar__user">
+          <strong>Andreas Andersson</strong>
+          <span>Utvecklare</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero__text">
+          <h1>STOR BRAND</h1>
+          <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+         praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+          excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+           officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+             est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+              possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+               quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum 
+                hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+                 alias consequatur aut perferendis doloribus asperiores repellat." "Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                       non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum. "Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                    quae ab illo inventore veritatis et quasi architecto beatae vitae
+                     dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                      aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                       eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                         velit, sed quia non numquam eius modi tempora incidunt ut labore
+                          et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                           veniam, quis nostrum exercitationem ullam corporis suscipit
+                            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                             autem vel eum iure reprehenderit qui in ea voluptate velit
+                              esse quam nihil molestiae consequatur, vel illum qui dolorem
+                               eum fugiat quo voluptas nulla pariatur?""Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                                  ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                   voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum. "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis"</p>
+          <h2>AI:n tar över världen!</h2>
+          <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                   accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                    quae ab illo inventore veritatis et quasi architecto beatae vitae
+                     dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                      aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                       eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                         velit, sed quia non numquam eius modi tempora incidunt ut labore
+                          et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
+                           veniam, quis nostrum exercitationem ullam corporis suscipit
+                            laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                             autem vel eum iure reprehenderit qui in ea voluptate velit
+                              esse quam nihil molestiae consequatur, vel illum qui dolorem
+                               eum fugiat quo voluptas nulla pariatur?""Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                 ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+                                  ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                                   voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                     mollit anim id est laborum. "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+         praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
+          excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+           officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+             est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+              possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+               quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum 
+                hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+                 alias consequatur aut perferendis doloribus asperiores repellat." "Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                      dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                       non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum."Et harum quidem
+            rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis
+             est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere
+              possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+               quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et
+                voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum 
+                hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+                 alias consequatur aut perferendis doloribus asperiores repellat."</p>
+        </div>
+        <div class="hero__image">
+          <img src="nyhet.png" alt="Nyhetsbild" />
+          <img src="AI.png" alt="AI-bild" class="hero__imageAI" />
+        </div>
+      </div>
+
+      <!-- Articles Section -->
+      <section class="articles-section">
+        <div class="articles-section__header">
+          <h2 class="articles-section__title">Artiklar</h2>
+          <button class="btn-create js-open-modal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <line x1="12" y1="5" x2="12" y2="19"/>
+              <line x1="5" y1="12" x2="19" y2="12"/>
+            </svg>
+            Ny artikel
+          </button>
+        </div>
+        <div class="articles-grid" id="articles-grid"></div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__brand"></div>
+      <nav class="footer__nav">
+        <p class="footer__heading">Produkt</p>
+        <ul>
+          <li><a href="#">Funktioner</a></li>
+          <li><a href="#">Priser</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav">
+        <p class="footer__heading">Företag</p>
+        <ul>
+          <li><a href="#">Om oss</a></li>
+          <li><a href="#">Blogg</a></li>
+          <li><a href="#">Karriär</a></li>
+        </ul>
+      </nav>
+      <nav class="footer__nav">
+        <p class="footer__heading">Juridik</p>
+        <ul>
+          <li><a href="#">Integritet</a></li>
+          <li><a href="#">Villkor</a></li>
+          <li><a href="#">Cookies</a></li>
+        </ul>
+      </nav>
+      <div class="footer__bottom">
+        <span><p>@2026 AA Produktion - Andreas Andersson</p></span>
+        <div class="footer__socials">
+          <a href="#">X</a>
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="article-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading">
+    <div class="modal__panel">
+      <div class="modal__header">
+        <h2 class="modal__title" id="modal-heading">Ny artikel</h2>
+        <button class="modal__close" id="modal-close" aria-label="Stäng">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <form class="article-form" id="article-form" novalidate>
+        <div class="form__group">
+          <label class="form__label" for="modal-title-input">Titel <span class="form__req">*</span></label>
+          <input class="form__input" id="modal-title-input" type="text" placeholder="Artikelns rubrik..." maxlength="120" />
+          <span class="form__error" id="error-title"></span>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="modal-category-input">Kategori <span class="form__req">*</span></label>
+          <select class="form__input form__select" id="modal-category-input">
+            <option value="">Välj kategori…</option>
+            <option value="Inrikes">Inrikes</option>
+            <option value="Utrikes">Utrikes</option>
+            <option value="Sport">Sport</option>
+            <option value="Ekonomi">Ekonomi</option>
+            <option value="Kultur & Nöje">Kultur & Nöje</option>
+            <option value="Tech">Tech</option>
+          </select>
+          <span class="form__error" id="error-category"></span>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="modal-body-input">Ingress <span class="form__req">*</span></label>
+          <textarea class="form__input form__textarea" id="modal-body-input" placeholder="Skriv en kort ingress…" rows="4" maxlength="600"></textarea>
+          <span class="form__error" id="error-body"></span>
+        </div>
+
+        <div class="form__actions">
+          <button type="button" class="btn-cancel" id="modal-cancel">Avbryt</button>
+          <button type="submit" class="btn-submit">Publicera artikel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
